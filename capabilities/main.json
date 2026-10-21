@@ -1,0 +1,8 @@
+{
+  "identifier": "main",
+  "description": "Ventana local de PC Compat",
+  "windows": [
+    "main"
+  ],
+  "permissions": []
+}

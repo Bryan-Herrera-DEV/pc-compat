@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>PC Compat</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="#inventory"><span class="brand-mark" aria-hidden="true">PC</span><span>PC <b>Compat</b></span></a>
+      <nav aria-label="Principal">
+        <a href="#inventory" aria-current="page">Resumen</a>
+        <a href="#catalog">Catálogo</a>
+        <a href="#coverage">Cobertura</a>
+      </nav>
+      <span class="status" id="status" role="status">Iniciando</span>
+    </div>
+  </header>
+  <main>
+    <section id="inventory" aria-labelledby="inventory-title">
+      <div class="masthead">
+        <div>
+          <p class="eyebrow">ESTACIÓN DE HARDWARE</p>
+          <h1 id="inventory-title">Resumen</h1>
+          <p id="board-name" class="muted">Detectando hardware de Windows…</p>
+        </div>
+        <div class="actions masthead-actions">
+          <button type="button" id="rescan">Volver a detectar</button>
+          <button type="button" id="copy" hidden>Copiar JSON</button>
+          <button type="button" id="installation-settings">Datos de instalación</button>
+          <a href="#catalog" class="primary">Explorar componentes</a>
+        </div>
+      </div>
+      <div id="scan-error" class="error" role="alert" hidden></div>
+      <div class="dashboard">
+        <div id="hardware-tiles" class="dashboard-hardware" hidden></div>
+        <aside class="panel dashboard-catalog" aria-labelledby="quick-title">
+          <p class="eyebrow">FUENTES OFICIALES</p>
+          <h2 id="quick-title">Catálogo</h2>
+          <strong class="dashboard-number" id="catalog-total">—</strong>
+          <div class="catalog-shortcuts" id="catalog-shortcuts"></div>
+        </aside>
+        <section class="panel dashboard-profile" aria-labelledby="profile-title">
+          <p class="eyebrow">PERFIL DEL EQUIPO</p>
+          <h2 id="profile-title">Compatibilidad</h2>
+          <p id="board-status" aria-live="polite">Esperando el inventario de Windows.</p>
+          <a href="#coverage">Ver cobertura</a>
+        </section>
+      </div>
+      <section id="hardware" class="hardware-details" aria-labelledby="details-title" hidden>
+        <div class="section-header"><h2 id="details-title">Detalles del equipo</h2><span class="muted">Windows · CIM / DXGI</span></div>
+        <div class="pills" id="hardware-tabs" aria-label="Detalles de hardware"></div>
+        <div class="panel" id="hardware-detail"></div>
+      </section>
+    </section>
+    <section id="catalog" aria-labelledby="catalog-title" hidden>
+      <div class="masthead">
+        <div>
+          <p class="eyebrow">ACTUALIZACIONES</p>
+          <h1 id="catalog-title">Catálogo de componentes</h1>
+          <p class="muted">Elige una pieza y revisa qué necesita para funcionar en tu equipo.</p>
+        </div>
+      </div>
+      <div class="catalog-controls panel">
+        <label class="field search-field">Buscar por modelo, marca o SKU
+          <input id="search" type="search" placeholder="Ej. DDR5 SO-DIMM, RTX 5070, NVMe 2230">
+        </label>
+        <div class="pills category-tabs" id="category-tabs" aria-label="Categorías del catálogo"></div>
+        <div class="catalog-options">
+          <label class="checkline" id="board-filter" hidden><input type="checkbox" id="listed"> Mostrar CPU en la lista oficial de mi placa</label>
+          <label class="checkline" id="gpu-filter" hidden><input type="checkbox" id="exact-gpu"> Solo tarjetas con medidas y requisitos eléctricos</label>
+          <label class="field inline-field" id="memory-filter" hidden>Tipo de memoria
+            <select id="memory-type">
+              <option value="">Todos</option><option value="DDR2">DDR2</option><option value="DDR3">DDR3</option><option value="DDR4">DDR4</option><option value="DDR5">DDR5</option>
+              <option value="UDIMM">UDIMM de escritorio</option><option value="SODIMM">SO-DIMM</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="catalog-grid">
+        <aside class="panel library" aria-label="Resultados del catálogo">
+          <div class="section-header"><h2>Resultados</h2><p class="eyebrow result-count" id="result-count" role="status"></p></div>
+          <div id="results"></div>
+          <button id="more" type="button" hidden>Mostrar más</button>
+        </aside>
+        <article class="panel product" id="product" aria-label="Ficha y dictamen" tabindex="-1"></article>
+      </div>
+    </section>
+    <section id="coverage" aria-labelledby="coverage-title" hidden>
+      <p class="eyebrow">EVIDENCIA Y TRAZABILIDAD</p>
+      <h1 id="coverage-title">Cobertura del catálogo</h1>
+      <p class="intro">El inventario funciona en cualquier equipo Windows compatible. La profundidad del dictamen depende de las fichas disponibles para el modelo y la revisión detectados.</p>
+      <div class="tiles" id="coverage-stats"></div>
+      <article class="panel coverage-panel">
+        <h2>Perfiles de placas y listas de CPU</h2>
+        <p class="muted">Las filas de soporte se importan de los fabricantes. Una fila ausente requiere consultar la lista oficial. Los modelos de GPU de referencia requieren identificar la tarjeta exacta para evaluar dimensiones y cableado.</p>
+        <div id="coverage-boards"></div>
+      </article>
+      <article class="panel coverage-panel">
+        <h2>Origen del inventario</h2>
+        <p class="muted">La aplicación consulta el hardware en el equipo. Las fichas se distribuyen con la app y sus enlaces se abren en el navegador al pulsarlos.</p>
+        <div id="inventory-sources" class="actions"></div>
+      </article>
+    </section>
+  </main>
+  <footer><span>PC COMPAT / WINDOWS</span><span id="catalog-version"></span></footer>
+  <dialog id="installation-dialog" aria-labelledby="installation-title">
+    <form id="installation-form">
+      <p class="eyebrow">CONFIGURACIÓN LOCAL</p>
+      <h2 id="installation-title">Fuente y espacio del gabinete</h2>
+      <p class="muted">Windows detecta tu placa, BIOS y componentes. Estos datos físicos ayudan a evaluar gráficas y puedes completarlos cuando los conozcas.</p>
+      <div class="form-grid installation-fields">
+        <label class="field">Potencia de la fuente (W)<input name="psu_w" type="number" min="1" max="65535" step="1" placeholder="Etiqueta de la fuente"></label>
+        <label class="field">Largo libre para la GPU (mm)<input name="gpu_length" type="number" min="0.1" max="3000" step="any"></label>
+        <label class="field">Alto libre para la GPU (mm)<input name="gpu_height" type="number" min="0.1" max="3000" step="any"></label>
+        <label class="field">Grosor libre para la GPU (mm)<input name="gpu_thickness" type="number" min="0.1" max="3000" step="any"></label>
+      </div>
+      <p class="muted installation-note">Usa el espacio disponible con el cableado y los demás componentes colocados. Los datos se guardan en este equipo.</p>
+      <div class="actions">
+        <button id="installation-skip" type="button">Cerrar por ahora</button>
+        <button class="primary" type="submit">Guardar datos</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/target/
+/node_modules/
+/gen/
+/.idea/
+__pycache__/
+/.venv/

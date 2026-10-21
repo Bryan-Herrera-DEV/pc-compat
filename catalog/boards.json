@@ -1,0 +1,1579 @@
+[
+  {
+    "manufacturer": "ASUS",
+    "model": "TUF GAMING B560M-PLUS WIFI",
+    "socket": "LGA1200",
+    "ddr": 4,
+    "dimms": 4,
+    "max_gib": 128,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/in/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b560m-plus-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b560m-plus-wifi/helpdesk_cpu?model2Name=TUF-GAMING-B560M-PLUS-WIFI",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b560m-plus-wifi/helpdesk_qvl_memory?model2Name=TUF-GAMING-B560M-PLUS-WIFI",
+    "max_source": "https://www.asus.com/uk/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b560m-plus-wifi/techspec/",
+    "topology_source": "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1200/TUF%20GAMING%20B560M-PLUS%20WIFI/E19912_TUF_GAMING_B560M-PLUS_WIFI_UM_V2_WEB.pdf",
+    "m2_slots": [
+      {
+        "name": "M.2_1",
+        "pcie_gen": 4,
+        "lengths": [
+          2242,
+          2260,
+          2280
+        ],
+        "cpu_family": "intel_11"
+      },
+      {
+        "name": "M.2_2",
+        "pcie_gen": 3,
+        "lengths": [
+          2242,
+          2260,
+          2280
+        ]
+      }
+    ],
+    "sata": true,
+    "sata_note": "SATA6G_2 queda deshabilitado si M.2_2 opera en modo SATA.",
+    "form_factor": "microATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 16,
+            "cpu_families": [
+              "intel_11"
+            ]
+          },
+          {
+            "generation": 3,
+            "lanes": 16,
+            "cpu_families": [
+              "intel_10"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1200/TUF%20GAMING%20B560M-PLUS%20WIFI/E19912_TUF_GAMING_B560M-PLUS_WIFI_UM_V2_WEB.pdf"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "TUF GAMING B650-PLUS WIFI",
+    "socket": "AM5",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": 256,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-plus-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-plus-wifi/helpdesk_cpu?model2Name=TUF-GAMING-B650-PLUS-WIFI",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-plus-wifi/helpdesk_qvl_memory?model2Name=TUF-GAMING-B650-PLUS-WIFI",
+    "topology_source": "https://www.asus.com/in/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-plus-wifi/techspec/",
+    "sata": true,
+    "m2_slots": [
+      {
+        "name": "M.2_1",
+        "pcie_gen": 5,
+        "lengths": [
+          2242,
+          2260,
+          2280
+        ],
+        "note": "Con Ryzen 8000, ASUS indica un máximo PCIe 4.0 ×4."
+      },
+      {
+        "name": "M.2_2",
+        "pcie_gen": 4,
+        "lengths": [
+          2242,
+          2260,
+          2280,
+          22110
+        ],
+        "note": "Con Ryzen 8000 el enlace puede ser ×2; verifica el CPU exacto."
+      },
+      {
+        "name": "M.2_3",
+        "pcie_gen": 4,
+        "lengths": [
+          2242,
+          2260,
+          2280
+        ],
+        "note": "Al ocupar M.2_3 se deshabilita PCIEX16_2."
+      }
+    ],
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 16,
+            "cpu_families": [
+              "ryzen_7_9"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": null,
+            "cpu_families": [
+              "ryzen_8",
+              "ryzen_8_x8",
+              "ryzen_8_x4"
+            ]
+          }
+        ],
+        "note": "Con Ryzen 8000, el ancho máximo depende del procesador (×8 o ×4)."
+      },
+      {
+        "name": "PCIEX16_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ],
+        "note": "Se deshabilita al ocupar M.2_3."
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-plus-wifi/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "TUF GAMING B650M-PLUS WIFI",
+    "socket": "AM5",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus-wifi/helpdesk_cpu?model2Name=TUF-GAMING-B650M-PLUS-WIFI",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus-wifi/helpdesk_qvl_memory?model2Name=TUF-GAMING-B650M-PLUS-WIFI",
+    "form_factor": "microATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 16,
+            "cpu_families": [
+              "ryzen_7_9"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": null,
+            "cpu_families": [
+              "ryzen_8",
+              "ryzen_8_x8",
+              "ryzen_8_x4"
+            ]
+          }
+        ],
+        "note": "Con Ryzen 8000, el ancho máximo depende del procesador (×8 o ×4)."
+      },
+      {
+        "name": "PCIEX16_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus-wifi/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME B450M-A II",
+    "socket": "AM4",
+    "ddr": 4,
+    "dimms": 4,
+    "max_gib": 128,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/bt/motherboards-components/motherboards/prime/prime-b450m-a-ii/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b450m-a-ii/helpdesk_cpu?model2Name=PRIME-B450M-A-II",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b450m-a-ii/helpdesk_qvl_memory?model2Name=PRIME-B450M-A-II",
+    "form_factor": "microATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": null
+          }
+        ],
+        "note": "La generación y el ancho eléctrico dependen de la familia de CPU."
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/bt/motherboards-components/motherboards/prime/prime-b450m-a-ii/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "TUF GAMING B450M-PLUS II",
+    "socket": "AM4",
+    "ddr": 4,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/gr-en/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b450m-plus-ii/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b450m-plus-ii/helpdesk_cpu?model2Name=TUF-GAMING-B450M-PLUS-II",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b450m-plus-ii/helpdesk_qvl_memory?model2Name=TUF-GAMING-B450M-PLUS-II",
+    "form_factor": "microATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": null
+          }
+        ],
+        "note": "Gen 3 o Gen 2 y ×16, ×8 o ×4 según CPU."
+      },
+      {
+        "name": "PCIEX16_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/gr-en/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b450m-plus-ii/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "TUF GAMING B550-PLUS WIFI II",
+    "socket": "AM4",
+    "ddr": 4,
+    "dimms": 4,
+    "max_gib": 128,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/uk/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550-plus-wifi-ii/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550-plus-wifi-ii/helpdesk_cpu?model2Name=TUF-GAMING-B550-PLUS-WIFI-II",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550-plus-wifi-ii/helpdesk_qvl_memory?model2Name=TUF-GAMING-B550-PLUS-WIFI-II",
+    "socket_source": "https://dlcdnets.asus.com/pub/ASUS/mb/SocketAM4/TUF_GAMING_B550-PLUS_WIFI_II/E22526_TUF_GAMING_B550-PLUS_WI-FI_II_V2_WEB.pdf",
+    "sata": true,
+    "sata_note": "SATA6G_5 y SATA6G_6 se deshabilitan si se ocupa M.2_2.",
+    "m2_slots": [
+      {
+        "name": "M.2_1",
+        "pcie_gen": 4,
+        "lengths": [
+          2242,
+          2260,
+          2280,
+          22110
+        ],
+        "note": "Ryzen 5000G y 4000G limitan esta ranura a PCIe 3.0 ×4."
+      },
+      {
+        "name": "M.2_2",
+        "pcie_gen": 3,
+        "lengths": [
+          2242,
+          2260,
+          2280,
+          22110
+        ],
+        "note": "Al ocupar M.2_2 se deshabilitan SATA6G_5 y SATA6G_6."
+      }
+    ],
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 16,
+            "cpu_families": [
+              "ryzen_am4_apu"
+            ]
+          },
+          {
+            "generation": null,
+            "lanes": 16
+          }
+        ],
+        "note": "Capacidad de hasta Gen 4 con CPUs que la admitan."
+      },
+      {
+        "name": "PCIEX16_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": null
+          }
+        ],
+        "note": "Hasta ×4. Pasa a ×1 si se ocupa alguna ranura PCIEX1."
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_3",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/uk/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550-plus-wifi-ii/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME Z790-P WIFI",
+    "socket": "LGA1700",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": 192,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/uk/motherboards-components/motherboards/prime/prime-z790-p-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-wifi/helpdesk_qvl_cpu?model2Name=PRIME-Z790-P-WIFI",
+    "cpu_format": "asus_nuxt",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-wifi/helpdesk_qvl_memory?model2Name=PRIME-Z790-P-WIFI",
+    "sata": true,
+    "m2_slots": [
+      {
+        "name": "M.2_1",
+        "pcie_gen": 4,
+        "lengths": [
+          2242,
+          2260,
+          2280,
+          22110
+        ]
+      },
+      {
+        "name": "M.2_2",
+        "pcie_gen": 4,
+        "lengths": [
+          2242,
+          2260,
+          2280
+        ]
+      },
+      {
+        "name": "M.2_3",
+        "pcie_gen": 4,
+        "lengths": [
+          2242,
+          2260,
+          2280,
+          22110
+        ]
+      }
+    ],
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16(G5)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 5,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_3",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1(G3)",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/uk/motherboards-components/motherboards/prime/prime-z790-p-wifi/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME Z790-P WIFI D4",
+    "socket": "LGA1700",
+    "ddr": 4,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-wifi-d4/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-wifi-d4/helpdesk_qvl_cpu?model2Name=PRIME-Z790-P-WIFI-D4",
+    "cpu_format": "asus_nuxt",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-wifi-d4/helpdesk_qvl_memory?model2Name=PRIME-Z790-P-WIFI-D4",
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16(G5)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 5,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_3",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1(G3)",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-wifi-d4/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME B760M-A D4",
+    "socket": "LGA1700",
+    "ddr": 4,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-d4/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-d4/helpdesk_qvl_cpu?model2Name=PRIME-B760M-A-D4",
+    "cpu_format": "asus_nuxt",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-d4/helpdesk_qvl_memory?model2Name=PRIME-B760M-A-D4",
+    "form_factor": "microATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16(G4)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_3",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-d4/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME H610M-A D4",
+    "socket": "LGA1700",
+    "ddr": 4,
+    "dimms": 2,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-a-d4/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-a-d4/helpdesk_qvl_cpu?model2Name=PRIME-H610M-A-D4",
+    "cpu_format": "asus_nuxt",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-a-d4/helpdesk_qvl_memory?model2Name=PRIME-H610M-A-D4",
+    "form_factor": "microATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16(G4)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1(G3)",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-a-d4/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "TUF GAMING X870-PLUS WIFI",
+    "socket": "AM5",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-plus-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-plus-wifi/helpdesk_cpu?model2Name=TUF-GAMING-X870-PLUS-WIFI",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-plus-wifi/helpdesk_qvl_memory?model2Name=TUF-GAMING-X870-PLUS-WIFI",
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16(G5)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 5,
+            "lanes": null,
+            "cpu_families": [
+              "ryzen_7_9"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": null,
+            "cpu_families": [
+              "ryzen_8",
+              "ryzen_8_x8",
+              "ryzen_8_x4"
+            ]
+          }
+        ],
+        "note": "Hasta ×16 con Ryzen 7000/9000; M.2_2 puede limitar a ×8. Ryzen 8000 opera a ×8 o ×4 según CPU."
+      },
+      {
+        "name": "PCIEX16(G4)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ],
+        "note": "Se deshabilita si M.2_4 opera."
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-plus-wifi/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME B850M-A WIFI",
+    "socket": "AM5",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b850m-a-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b850m-a-wifi/helpdesk_cpu?model2Name=PRIME-B850M-A-WIFI",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b850m-a-wifi/helpdesk_qvl_memory?model2Name=PRIME-B850M-A-WIFI",
+    "form_factor": "microATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16(G5)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 5,
+            "lanes": 16,
+            "cpu_families": [
+              "ryzen_7_9"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": null,
+            "cpu_families": [
+              "ryzen_8",
+              "ryzen_8_x8",
+              "ryzen_8_x4"
+            ]
+          }
+        ],
+        "note": "Con Ryzen 8000, el ancho máximo depende del procesador (×8 o ×4)."
+      },
+      {
+        "name": "PCIEX16(G4)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b850m-a-wifi/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME B650-PLUS WIFI",
+    "socket": "AM5",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b650-plus-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b650-plus-wifi/helpdesk_cpu?model2Name=PRIME-B650-PLUS-WIFI",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b650-plus-wifi/helpdesk_qvl_memory?model2Name=PRIME-B650-PLUS-WIFI",
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 16,
+            "cpu_families": [
+              "ryzen_7_9"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": null,
+            "cpu_families": [
+              "ryzen_8",
+              "ryzen_8_x8",
+              "ryzen_8_x4"
+            ]
+          }
+        ],
+        "note": "Con Ryzen 8000, el ancho máximo depende del procesador (×8 o ×4)."
+      },
+      {
+        "name": "PCIEX16_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b650-plus-wifi/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "TUF GAMING Z890-PLUS WIFI",
+    "socket": "LGA1851",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z890-plus-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z890-plus-wifi/helpdesk_qvl_cpu?model2Name=TUF-GAMING-Z890-PLUS-WIFI",
+    "cpu_format": "asus_nuxt",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z890-plus-wifi/helpdesk_qvl_memory?model2Name=TUF-GAMING-Z890-PLUS-WIFI",
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16(G5)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 5,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX4(G4)",
+        "connector_lanes": 4,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1(G4)_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1(G4)_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z890-plus-wifi/techspec/"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME B860-PLUS WIFI",
+    "socket": "LGA1851",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": null,
+    "form": "UDIMM",
+    "source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b860-plus-wifi/techspec/",
+    "cpu_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b860-plus-wifi/helpdesk_qvl_cpu?model2Name=PRIME-B860-PLUS-WIFI",
+    "cpu_format": "asus_nuxt",
+    "memory_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b860-plus-wifi/helpdesk_qvl_memory?model2Name=PRIME-B860-PLUS-WIFI",
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16(G5)",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 5,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_3",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16(G4)_4",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b860-plus-wifi/techspec/"
+  },
+  {
+    "manufacturer": "GIGABYTE",
+    "model": "B650 AORUS ELITE AX",
+    "revision": "1.2",
+    "socket": "AM5",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": 256,
+    "form": "UDIMM",
+    "source": "https://www.gigabyte.com/ge/Motherboard/B650-AORUS-ELITE-AX-rev-12/sp",
+    "cpu_source": "https://www.gigabyte.com/Motherboard/B650-AORUS-ELITE-AX-rev-12/support",
+    "cpu_format": "manual",
+    "memory_source": "https://www.gigabyte.com/Motherboard/B650-AORUS-ELITE-AX-rev-12/support",
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 16,
+            "cpu_families": [
+              "ryzen_7_9"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": 8,
+            "cpu_families": [
+              "ryzen_8_x8"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": 4,
+            "cpu_families": [
+              "ryzen_8_x4"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": null,
+            "cpu_families": [
+              "ryzen_8"
+            ]
+          }
+        ],
+        "note": "Topología de la revisión 1.2. La generación real depende de CPU, GPU y configuración."
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.gigabyte.com/ge/Motherboard/B650-AORUS-ELITE-AX-rev-12/sp"
+  },
+  {
+    "manufacturer": "MSI",
+    "model": "MAG B650 TOMAHAWK WIFI",
+    "socket": "AM5",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": 256,
+    "form": "UDIMM",
+    "source": "https://au.msi.com/Motherboard/MAG-B650-TOMAHAWK-WIFI/Specification",
+    "cpu_source": "https://www.msi.com/Motherboard/MAG-B650-TOMAHAWK-WIFI/support#cpu",
+    "cpu_format": "manual",
+    "memory_source": "https://www.msi.com/Motherboard/MAG-B650-TOMAHAWK-WIFI/support#mem",
+    "form_factor": "ATX",
+    "pcie_slots": [
+      {
+        "name": "PCI_E1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": 16,
+            "cpu_families": [
+              "ryzen_7_9"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": 8,
+            "cpu_families": [
+              "ryzen_8_x8"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": 4,
+            "cpu_families": [
+              "ryzen_8_x4"
+            ]
+          },
+          {
+            "generation": 4,
+            "lanes": null,
+            "cpu_families": [
+              "ryzen_8"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "PCI_E2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": null
+          }
+        ],
+        "note": "Hasta ×2; comparte ancho de banda con M.2_3."
+      },
+      {
+        "name": "PCI_E3",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://au.msi.com/Motherboard/MAG-B650-TOMAHAWK-WIFI/Specification"
+  },
+  {
+    "manufacturer": "ASRock",
+    "model": "B650M Pro RS WiFi",
+    "socket": "AM5",
+    "ddr": 5,
+    "dimms": 4,
+    "max_gib": 256,
+    "form": "UDIMM",
+    "source": "https://www.asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp",
+    "cpu_source": "https://www.asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp#CPU",
+    "cpu_format": "manual",
+    "memory_source": "https://www.asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp#Memory",
+    "form_factor": "microATX",
+    "pcie_slots": [
+      {
+        "name": "PCIE1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 4,
+            "lanes": null
+          }
+        ],
+        "note": "Hasta ×16 según CPU."
+      },
+      {
+        "name": "PCIE2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 4
+          }
+        ]
+      }
+    ],
+    "pcie_source": "https://www.asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "P5G41T-M LX",
+    "socket": "LGA775",
+    "ddr": 3,
+    "dimms": 2,
+    "max_gib": 8,
+    "form": "UDIMM",
+    "form_factor": "microATX",
+    "source": "https://dlcdnet.asus.com/pub/ASUS/mb/socket775/P5G41T-M_LX/G7096_P5G41T-M-LX.pdf",
+    "cpu_source": "https://www.asus.com/supportonly/p5g41t-m%20lx/helpdesk_cpu/",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/supportonly/p5g41t-m%20lx/helpdesk_qvl/",
+    "pcie_source": "https://dlcdnet.asus.com/pub/ASUS/mb/socket775/P5G41T-M_LX/G7096_P5G41T-M-LX.pdf",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "m2_known_absent": true,
+    "sata": true,
+    "spec_format": "pdf"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "P8H61-M LX3 PLUS R2.0",
+    "socket": "LGA1155",
+    "ddr": 3,
+    "dimms": 2,
+    "max_gib": 16,
+    "form": "UDIMM",
+    "form_factor": "microATX",
+    "source": "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1155/P8H61-M_LX3_PLUS_R2.0/E7378_P8H61-M_LX3_R2_Series.pdf",
+    "cpu_source": "https://www.asus.com/supportonly/p8h61-m%20lx3%20plus%20r2.0/helpdesk_cpu/",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/supportonly/p8h61-m%20lx3%20plus%20r2.0/helpdesk_qvl/",
+    "pcie_source": "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1155/P8H61-M_LX3_PLUS_R2.0/E7378_P8H61-M_LX3_R2_Series.pdf",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 3,
+            "lanes": 16,
+            "cpu_families": [
+              "intel_3"
+            ]
+          },
+          {
+            "generation": 2,
+            "lanes": 16
+          }
+        ],
+        "note": "Gen 3 solo con Intel Core de 3.ª generación compatible."
+      },
+      {
+        "name": "PCIEX1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "m2_known_absent": true,
+    "sata": true,
+    "spec_format": "pdf"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "H81M-K",
+    "socket": "LGA1150",
+    "ddr": 3,
+    "dimms": 2,
+    "max_gib": 16,
+    "form": "UDIMM",
+    "form_factor": "microATX",
+    "source": "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1150/H81M-K/E8601_H81M-K.pdf",
+    "cpu_source": "https://www.asus.com/supportonly/h81m-k/helpdesk_cpu/",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/supportonly/h81m-k/helpdesk_qvl/",
+    "pcie_source": "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1150/H81M-K/E8601_H81M-K.pdf",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "m2_known_absent": true,
+    "sata": true,
+    "spec_format": "pdf"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "H110M-K",
+    "socket": "LGA1151",
+    "ddr": 4,
+    "dimms": 2,
+    "max_gib": 32,
+    "form": "UDIMM",
+    "form_factor": "microATX",
+    "source": "https://www.asus.com/ca-en/motherboards-components/motherboards/prime/h110m-k/techspec/",
+    "cpu_source": "https://www.asus.com/supportonly/h110m-k/helpdesk_cpu/",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/supportonly/h110m-k/helpdesk_qvl/",
+    "pcie_source": "https://www.asus.com/ca-en/motherboards-components/motherboards/prime/h110m-k/techspec/",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 16
+          }
+        ],
+        "note": "El fabricante indica Gen 3 o Gen 2."
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "m2_known_absent": true,
+    "sata": true,
+    "socket_source": "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1151/H110M-K/E10950_H110M-K_UM_WEB_only.pdf"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "PRIME H310M-K",
+    "socket": "LGA1151",
+    "ddr": 4,
+    "dimms": 2,
+    "max_gib": 32,
+    "form": "UDIMM",
+    "form_factor": "microATX",
+    "source": "https://www.asus.com/in/motherboards-components/motherboards/prime/prime-h310m-k/techspec/",
+    "cpu_source": "https://www.asus.com/supportonly/prime%20h310m-k/helpdesk_cpu/",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/supportonly/prime%20h310m-k/helpdesk_qvl/",
+    "pcie_source": "https://www.asus.com/in/motherboards-components/motherboards/prime/prime-h310m-k/techspec/",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 16
+          }
+        ],
+        "note": "El fabricante indica Gen 3 o Gen 2."
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "m2_known_absent": true,
+    "sata": true
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "M5A97 R2.0",
+    "socket": "AM3+",
+    "ddr": 3,
+    "dimms": 4,
+    "max_gib": 32,
+    "form": "UDIMM",
+    "form_factor": "ATX",
+    "source": "https://dlcdnet.asus.com/pub/ASUS/mb/SocketAM3%2B/M5A97_R2.0/E8046_M5A97_R2.pdf",
+    "cpu_source": "https://www.asus.com/supportonly/m5a97%20r2.0/helpdesk_cpu/",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/supportonly/m5a97%20r2.0/helpdesk_qvl/",
+    "pcie_source": "https://dlcdnet.asus.com/pub/ASUS/mb/SocketAM3%2B/M5A97_R2.0/E8046_M5A97_R2.pdf",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16_1",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX16_2",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 4
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "m2_known_absent": true,
+    "sata": true,
+    "spec_format": "pdf"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "A68HM-K",
+    "socket": "FM2+",
+    "ddr": 3,
+    "dimms": 2,
+    "max_gib": 32,
+    "form": "UDIMM",
+    "form_factor": "microATX",
+    "source": "https://dlcdnets.asus.com/pub/ASUS/mb/SocketFM2/A68HM-E/E9808_A68HM_Series_Manual_Print_vendor_only.pdf",
+    "cpu_source": "https://www.asus.com/supportonly/a68hm-k/helpdesk_cpu/",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/supportonly/a68hm-k/helpdesk_qvl/",
+    "pcie_source": "https://dlcdnets.asus.com/pub/ASUS/mb/SocketFM2/A68HM-E/E9808_A68HM_Series_Manual_Print_vendor_only.pdf",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 16
+          }
+        ],
+        "note": "Gen 3 solo con procesadores FM2+ compatibles. Con FM2, Gen 2."
+      },
+      {
+        "name": "PCIEX1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": 2,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "m2_known_absent": true,
+    "sata": true,
+    "spec_format": "pdf"
+  },
+  {
+    "manufacturer": "ASUS",
+    "model": "M2N",
+    "socket": "AM2",
+    "ddr": 2,
+    "dimms": 4,
+    "max_gib": 8,
+    "form": "UDIMM",
+    "form_factor": "ATX",
+    "source": "https://dlcdnet.asus.com/pub/ASUS/mb/socketAM2/m2n/e2753_m2n.pdf",
+    "cpu_source": "https://www.asus.com/supportonly/m2n/helpdesk_cpu/",
+    "cpu_format": "asus_legacy",
+    "memory_source": "https://www.asus.com/supportonly/m2n/helpdesk_qvl/",
+    "pcie_source": "https://dlcdnet.asus.com/pub/ASUS/mb/socketAM2/m2n/e2753_m2n.pdf",
+    "pcie_slots": [
+      {
+        "name": "PCIEX16",
+        "connector_lanes": 16,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 16
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_1",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 1
+          }
+        ]
+      },
+      {
+        "name": "PCIEX1_2",
+        "connector_lanes": 1,
+        "modes": [
+          {
+            "generation": null,
+            "lanes": 1
+          }
+        ]
+      }
+    ],
+    "m2_known_absent": true,
+    "sata": true,
+    "sata_note": "Cuatro puertos SATA de 3 Gb/s según el manual.",
+    "memory_note": "El manual limita los chips DDR2 a 1 Gbit. Comprueba la organización de cada módulo.",
+    "spec_format": "pdf"
+  }
+]
