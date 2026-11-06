@@ -1,5 +1,11 @@
 # PC Compat
 
+[![Versión 0.4.0](https://img.shields.io/badge/versi%C3%B3n-0.4.0-B5DD76?style=flat-square)](CHANGELOG.md)
+[![Windows x64](https://img.shields.io/badge/Windows-x64-3076CA?style=flat-square)](docs/instalacion.md)
+[![Rust 1.92](https://img.shields.io/badge/Rust-1.92-BD4932?style=flat-square&logo=rust&logoColor=white)](docs/desarrollo.md)
+[![Tauri 2](https://img.shields.io/badge/Tauri-2-2D777C?style=flat-square&logo=tauri&logoColor=white)](docs/arquitectura.md)
+[![Licencia propietaria](https://img.shields.io/badge/licencia-propietaria-585D66?style=flat-square)](LICENSE.md)
+
 **Comprueba qué componentes puedes instalar en tu PC antes de comprar.**
 
 PC Compat es una aplicación de escritorio para Windows que detecta tu hardware y evalúa actualizaciones de **CPU, memoria RAM, GPU, almacenamiento y placa base**. El dictamen enlaza fichas técnicas, manuales y listas de soporte de los fabricantes.
@@ -7,6 +13,10 @@ PC Compat es una aplicación de escritorio para Windows que detecta tu hardware 
 PC Compat is a **Windows PC hardware compatibility checker** built with Rust and Tauri. It helps with PC building and upgrades by matching a local hardware inventory against official motherboard, CPU, GPU, memory and SSD specifications.
 
 [English overview](README.en.md) · [Instalación](docs/instalacion.md) · [Guía de uso](docs/uso.md) · [Documentación](docs/README.md)
+
+![Resumen de PC Compat con inventario de ejemplo, categorías del catálogo y perfil de compatibilidad](docs/assets/resumen-pc-compat.png)
+
+*Vista del resumen de PC Compat 0.4.0 con datos de un equipo de ejemplo.*
 
 ## Qué puedes comprobar
 
